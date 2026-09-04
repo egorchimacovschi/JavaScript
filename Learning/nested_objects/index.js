@@ -1,19 +1,32 @@
-//function expression is a way to declare a function as  value or variable
+const person = {
+    name: "Egor",
+    age: 20,
+    hobbies: ["Sport", "Reading"],
+    address: {
+        country: "Moldova",
+        city: "Bucharest",
+    }
+}
 
-//function hello(){
-//    console.log("Hello");
-//}
+console.log(person.hobbies[0]);
+console.log(person.address.city);
 
+for (const property in person.address){
+    console.log(person.address[property]);
+}
 
-setTimeout(function(){
-    console.log("Hello");
-}, 3000);
+class Person{
+    constructor(name, age, ...address){
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address);
+    }
+}
 
-const number = [1, 2, 3, 4, 5, 6];
-const squares = number.map(function (element){
-    return Math.pow(element, 2);
-});
-
-function square(element){
-    return Math.pow(element, 2);
+class Address{
+    constructor(country, city, street){
+        this.country = country;
+        this.city = city;
+        this.street = street;
+    }
 }

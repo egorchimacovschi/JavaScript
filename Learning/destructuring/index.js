@@ -27,10 +27,11 @@ const person2 = {
 }
 
 const {fistName, age} = person1;
-
-function displayPerson({firsName, age}){
+//                                     asign defalut avalue if this property is not found
+function displayPerson({firsName, age, job="unemplyed"}){
     console.log(firsName);
     console.log(age);
+    console.log(job);
 }
 
 displayPerson(person1);

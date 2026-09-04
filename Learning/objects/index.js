@@ -1,19 +1,14 @@
-//function expression is a way to declare a function as  value or variable
-
-//function hello(){
-//    console.log("Hello");
-//}
+// object - a collection of properties and methods
 
 
-setTimeout(function(){
-    console.log("Hello");
-}, 3000);
+const person ={
+    firstName: "Egor",
+    lastNamw: "Chimacovschi",
+    age: 20,
+    isEmployed: true,
 
-const number = [1, 2, 3, 4, 5, 6];
-const squares = number.map(function (element){
-    return Math.pow(element, 2);
-});
-
-function square(element){
-    return Math.pow(element, 2);
+    speaking: function(name){console.log(`HI to ${name}`);},
 }
+
+person.speaking("Egor");
+console.log(person.firstName)

@@ -1,19 +1,26 @@
-//function expression is a way to declare a function as  value or variable
+//static are the property more exclusive to calss itself rhater to any objects
 
-//function hello(){
-//    console.log("Hello");
-//}
+class MathUtil{
+    static PI = 3.14159;
+
+    static getdiameter(radius){
+        return radius * 2;
+    }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.getdiameter(10));
+
+class User{
+    static userCount = 0;
 
 
-setTimeout(function(){
-    console.log("Hello");
-}, 3000);
+    constructor(username){
+        this.username = username;
+        User.userCount ++;
+    }
 
-const number = [1, 2, 3, 4, 5, 6];
-const squares = number.map(function (element){
-    return Math.pow(element, 2);
-});
-
-function square(element){
-    return Math.pow(element, 2);
+    static getUserCount(){
+        console.log(`${User.userCount}`);
+    }
 }

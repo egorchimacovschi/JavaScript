@@ -1,19 +1,20 @@
-//function expression is a way to declare a function as  value or variable
+class Product{
+    constructor (name, price){
+        this.price = price;
+        this.name = name;
+    }
 
-//function hello(){
-//    console.log("Hello");
-//}
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+    }
 
-
-setTimeout(function(){
-    console.log("Hello");
-}, 3000);
-
-const number = [1, 2, 3, 4, 5, 6];
-const squares = number.map(function (element){
-    return Math.pow(element, 2);
-});
-
-function square(element){
-    return Math.pow(element, 2);
+    calculateTotal(salesTax){
+        return this.price + (this.price * salesTax);
+    }
 }
+
+const product1 = new Product("Shirt", 19.99);
+product1.displayProduct();
+const salesTax = 0.1;
+
+console.log(product1.calculateTotal(salesTax));

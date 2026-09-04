@@ -1,19 +1,16 @@
-//function expression is a way to declare a function as  value or variable
+// constructor = special method on defining properties and methods
 
-//function hello(){
-//    console.log("Hello");
-//}
-
-
-setTimeout(function(){
-    console.log("Hello");
-}, 3000);
-
-const number = [1, 2, 3, 4, 5, 6];
-const squares = number.map(function (element){
-    return Math.pow(element, 2);
-});
-
-function square(element){
-    return Math.pow(element, 2);
+function Car(make, model, year, color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+    this.drive = function(){console.log(`You drive the ${this.model}`);}
 }
+
+const car1 = new Car("Ford", "Mustang", 2024, "red");
+console.log(car1.color);
+console.log(car1.make);
+console.log(car1.year);
+console.log(car1.model);
+car1.drive();

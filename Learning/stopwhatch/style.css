@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(0, 6%, 79%, 0.864);
+}
+#myH1{
+    font-size:  4em;
+    font-family: 'Courier New', Courier, monospace;
+    color: hsla(0, 0%, 0%, 0.842);
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: white;
+}
+#display{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsla(0, 20%, 67%, 0.331);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.703);
+    margin-bottom: 25px;
+}
+#controls button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;;
+}
+#startbtn{
+    background-color: purple;
+}
+#startbtn:hover{
+    background-color: hsla(300, 100%, 25%, 0.729);
+}
+
+#stopbtn{
+    background-color: rgb(10, 3, 130);
+}
+#stopbtn:hover{
+    background-color: hsla(231, 100%, 25%, 0.729);
+}
+
+#resetbtn{
+    background-color: rgb(130, 3, 22);
+}
+#resetbtn:hover{
+    background-color: hsla(346, 100%, 25%, 0.729);
+}

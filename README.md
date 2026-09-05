@@ -37,5 +37,3 @@ node <folder>/<file>.js
 ## ✍️ Author
 
 Maintained by Egor as part of ongoing JavaScript coursework.
-
-<sub>Note: some exercises here were written while following Bro Code's JavaScript tutorials on YouTube; original teaching content © Bro Code.</sub>

@@ -1,6 +1,6 @@
 # JavaScript
 
-My dedication to JavaScript — a personal collection of exercises, mini-programs, and small practice projects, organized by folder.
+My dedication to JavaScript — a personal collection of exercises, mini-programs, and small practice projects.
 
 ## 📁 Repository Structure
 
